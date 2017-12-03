@@ -4,9 +4,86 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+    .FontStyleMiddle {
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+    .FontStyleBig {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+    <title>EngageDynamics</title>
   </head>
+
   <body>
-    Please find the code at <a href="https://github.com/zhaozj89/SMSOM">here</a>.
-  </body>
+    <div class="container">
+      <div class="jumbotron">
+        <table class="table">
+          <tr>
+            <td height="163" colspan="2" align="center">
+              <div align="center">
+                <div><span class="FontStyleBig">Stacked Multilayer Self-Organizing Map for Background Modeling</span>
+                </div>
+                <br>
+              </td>
+            </tr>
+        </table>
+      </div>
+
+      <!-- content -->
+      <div>
+        <table class="table">
+          <tr>
+            <td bgcolor="#CCCCCC" height="231" width="83">
+              <div align="right"><span class="FontStyleMiddle">Abstract</span></div>
+            </td>
+
+            <td width="711">
+              <div align="justify">
+                In this paper, a new background modeling method called stacked multilayer self-organizing map background model (SMSOM-BM) is proposed, which presents several merits such as strong representative ability for complex scenarios, easy to use, and so on. In order to enhance the representative ability of the background model and make the parameters learned automatically, the recently developed idea of representative learning (or deep learning) is elegantly employed to extend the existing single-layer self-organizing map background model to a multilayer one (namely, the proposed SMSOM-BM). As a consequence, the SMSOM-BM gains several merits including strong representative ability to learn background model of challenging scenarios, and automatic determination for most network parameters. More specifically, every pixel is modeled by a SMSOM, and spatial consistency is considered at each layer. By introducing a novel over-layer filtering process, we can train the background model layer by layer in an efficient manner. Furthermore, for real-time performance consideration, we have implemented the proposed method using NVIDIA CUDA platform. Comparative experimental results show superior performance of the proposed approach.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#CCCCCC" height="46"><div class="FontStyleMiddle" align="right">Supplementary materials</div></td>
+            <td>
+              <div align="left">
+                <strong><a href="https://github.com/zhaozj89/SMSOM">Source Code and Experiment Details</a></strong>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#CCCCCC" height="154"><div class="FontStyleMiddle" align="right">Citation</div></td>
+            <td>
+              <div align="left"><span lang="EN-US"> </span>
+                @ARTICLE{7097028, </br>
+                author={Z. Zhao and X. Zhang and Y. Fang}, </br>
+                journal={IEEE Transactions on Image Processing}, </br>
+                title={Stacked Multilayer Self-Organizing Map for Background Modeling}, </br>
+                year={2015}, </br>
+                volume={24}, </br>
+                number={9}, </br>
+                pages={2841-2850}, </br>
+                keywords={image filtering;learning (artificial intelligence);motion estimation;parallel architectures;self-organising feature maps;NVIDIA CUDA;SMSOM-BM;automatic network parameter determination;background modeling method;motion detection;overlayer filtering process;representative learning;spatial consistency;stacked multilayer self-organizing map;Adaptation models;Biological neural networks;Computational modeling;Data models;Maintenance engineering;Training;Training data;Background modeling;representative learning;self-organizing map}, </br>
+                doi={10.1109/TIP.2015.2427519}, </br>
+                ISSN={1057-7149}, </br>
+                month={Sept},} </br>
+              </div>
+            </td>
+          </tr>
+
+          <tr><td colspan="2" height="37"><div align="right"></div></td></tr>
+        </table>
+      </div>
+    </div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
 </html>
