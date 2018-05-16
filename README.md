@@ -1,3 +1,8 @@
+# Notice
+
+This is a bug fix version because the initial version is not consistent with the description in the paper (found by contributors), but is not tested. If you come across errors, please play with
+the initial version first by `git checkout 1d486abd4d61c89c787fb05bf1f1226b067deb9b`.
+
 # How to use
 
 
@@ -11,10 +16,10 @@ Then you have two options:
 * If you have foreground free traning images, then execute:
 
   `smsom train <start_frame_number> <end_frame_number> <input_file_name> <output_file_name>`
-    
-  where `<start_frame_number>` and `<end_frame_number>` stand for the index range of the training images; `<input_file_name>`     is the format of the input image's name, and the last parameter `<output_file_name>` is optional, if you omit it, then the output images are just shown in your screen, but not stored in your computer. 
 
-  For example, if I put the input images in: **E:\Data\input\**, 
+  where `<start_frame_number>` and `<end_frame_number>` stand for the index range of the training images; `<input_file_name>`     is the format of the input image's name, and the last parameter `<output_file_name>` is optional, if you omit it, then the output images are just shown in your screen, but not stored in your computer.
+
+  For example, if I put the input images in: **E:\Data\input\**,
   the image files' name format is: **in000001.jpg** (any number), and I use 1-100 images to train the model, then I can execute:
 
   `smsom train 1 100 E:\\Data\\input\\in%06d.jpg E:\\Data\\results\\bin%06d.jpg`
@@ -26,13 +31,13 @@ Then you have two options:
   `smsom train 1 100 E:\\Data\\input\\in%06d.jpg`
 
   where I do not store the output images.
-  
+
 * If you do not have foreground free training images, you can execute:
-  
+
   `smsom nottrain <input_file_name> <output_file_name>`
 
-  where the meanings of `<input_file_name>` and `<output_file_name>` (optional) are the same as the previous case. In this situation, we set the threshold tau=0.06 (see **[1]** for more details). 
- 
+  where the meanings of `<input_file_name>` and `<output_file_name>` (optional) are the same as the previous case. In this situation, we set the threshold tau=0.06 (see **[1]** for more details).
+
 ### For Linux users:
 
 
@@ -62,6 +67,9 @@ Some demo scripts are shown as follows (assuming you have decompressed dataset *
 You should use the Matlab script **.\tools\median_filter.m** to do a 5X5 median filtering as suggested in **[2]**.
 
 ------------------------------------------------------------
+# Contributors
+
+Jin Zhang
 
 # References
 
