@@ -76,3 +76,6 @@ Jin Zhang
 [1] http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-linux/#axzz3DimlP7Yp
 
 [2] http://www.changedetection.net/
+
+--------------------------------------------
+BSD 3-Clause License
